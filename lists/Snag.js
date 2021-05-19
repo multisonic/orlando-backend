@@ -22,11 +22,12 @@ const snagFields = {
     },
     carpenter: {
       type: Relationship,
-      ref: 'Carpenter',
+      ref: 'Carpenter.snags',
       isRequired: true,
       many: false,
     },
   },
+  labelResolver: (item) => `Perf ${item.performanceNumber} - ${item.date}`,
 };
 
 module.exports = snagFields;

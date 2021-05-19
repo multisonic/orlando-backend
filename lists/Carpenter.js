@@ -16,7 +16,7 @@ const carpenterFields = {
     },
     snags: {
       type: Relationship,
-      ref: 'Snag',
+      ref: 'Snag.carpenter',
       isRequired: false,
       many: true,
     },
